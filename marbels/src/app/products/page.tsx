@@ -1,0 +1,118 @@
+"use client";
+
+import { MarbleCard } from "../components/marbleCard";
+
+export default function Products(){
+
+    const marbles = [
+        {
+            id: "dallas-white",
+          imageUrl: "/mar_pics/marbel1.jpg",
+          title: "Dallas White Granite",
+          additionalName: "Umesh..",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        { id: "bianco-carrara",
+          imageUrl: "/mar_pics/marbel4.jpg",
+          title: "Bianco Carrara Marble",
+          additionalName: "Satish...",
+          countryFlag: "/india.png",
+          countryName: "Italy",
+          type: "Marble",
+        },
+        { id: "bianco-romano",
+          imageUrl: "/mar_pics/marbel3.jpg",
+          title: "Bianco Romano Granite",
+          additionalName: "Manish...",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        { id: "dallas-romano",
+          imageUrl: "/mar_pics/marbel2.jpg",
+          title: "Copenhagen Granite",
+          additionalName: "Vinod...",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        {
+            id: "dallas-white",
+          imageUrl: "/mar_pics/marbel1.jpg",
+          title: "Dallas White Granite",
+          additionalName: "Umesh..",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        { id: "bianco-carrara",
+          imageUrl: "/mar_pics/marbel4.jpg",
+          title: "Bianco Carrara Marble",
+          additionalName: "Satish...",
+          countryFlag: "/india.png",
+          countryName: "Italy",
+          type: "Marble",
+        },
+        { id: "bianco-romano",
+          imageUrl: "/mar_pics/marbel3.jpg",
+          title: "Bianco Romano Granite",
+          additionalName: "Manish...",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        { id: "dallas-romano",
+          imageUrl: "/mar_pics/marbel2.jpg",
+          title: "Copenhagen Granite",
+          additionalName: "Vinod...",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        {
+            id: "dallas-white",
+          imageUrl: "/mar_pics/marbel1.jpg",
+          title: "Dallas White Granite",
+          additionalName: "Umesh..",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        { id: "bianco-carrara",
+          imageUrl: "/mar_pics/marbel4.jpg",
+          title: "Bianco Carrara Marble",
+          additionalName: "Satish...",
+          countryFlag: "/india.png",
+          countryName: "Italy",
+          type: "Marble",
+        },
+        { id: "bianco-romano",
+          imageUrl: "/mar_pics/marbel3.jpg",
+          title: "Bianco Romano Granite",
+          additionalName: "Manish...",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+        { id: "dallas-romano",
+          imageUrl: "/mar_pics/marbel2.jpg",
+          title: "Copenhagen Granite",
+          additionalName: "Vinod...",
+          countryFlag: "/india.png",
+          countryName: "Brazil",
+          type: "Granite",
+        },
+      ];
+    return(
+        <div>
+            <h1 className="text-4xl p-5 font-semibold">Our Products</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-5">
+              {marbles.map((marble, index) => (
+                <MarbleCard key={index} {...marble} />
+              ))}
+            </div>
+        </div>
+    )
+}
