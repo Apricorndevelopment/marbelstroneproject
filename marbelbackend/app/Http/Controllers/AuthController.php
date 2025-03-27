@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Hash;
 // use Illuminate\Validation\ValidationException;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\JsonResponse;
+
 // use Laravel\Sanctum\HasApiTokens;
 
 class AuthController extends Controller
